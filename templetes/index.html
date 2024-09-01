@@ -1,0 +1,347 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>_Expert_</title>
+    <link rel="stylesheet" href="{% static 'CSS/style.css' %}">
+    <link rel="stylesheet" href="{% static 'icons/css/all.css' %}">
+    <link href="{% static 'img/log.png' %}" rel="icon" type="img/png">
+
+    <link href=" {% static 'CSS/ion-icons.min.css' %}" rel="stylesheet" type="text/css">
+    <link href=" {% static 'CSS/etline-icons.min.css' %}" rel="stylesheet" type="text/css">
+    <link href="http://fonts.googleapis.com/css?family=Montserrat:400,700%7CRaleway:400,100,200,300%7CHind:400,300" rel="stylesheet" type="text/css">
+    <style>
+        .me{
+            margin-top: 0;
+            height: 90vh;
+            background-position: center;
+            background-size: cover;
+            background-image: linear-gradient(rgba(0, 0, 0, 0.918), rgba(0, 0, 0, 0.89)), 
+            url('{% static "img/image1.jpg" %}');
+            object-fit: cover;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            flex-wrap: wrap;
+        }
+        #services{
+            background-image: linear-gradient(rgba(0, 0, 0, 0.87), rgba(0, 0, 0, 0.87)), 
+            url('{% static "img/image2.jpg" %}');
+            background-position: center;
+            background-size: cover;
+            object-fit: cover;
+        }
+        
+    </style>
+</head>
+<body>
+
+    <div id="heander"  > 
+        <div class="fixx">
+            <div class="fix">
+
+
+            <nav  style="position: fixed; width: 100%; background-color: #000000; margin-top: 0;" >
+                
+               <h2 style="margin-left: 20%;"> _Exp<span style="color: #ff004f;" >ert_</span> </h2>
+                <ul id="sidemenu" class="ul" >
+                    <li class="li" ><a href="#heander">Ho<span >me</span> </a></li>
+                    <li class="li" ><a href="#about">Abo<span >ut</span></a></li>
+                    <li class="li"><a href="#services">Serv<span >ices</span></a></li>
+                    <li class="li" ><a href="#project">Pro<span >jects</span></a></li>
+                    <li class="li" ><a href="#contct">cont<span >act</span></a></li>
+                    <i class="fas fa-times"  onclick="closemenu()" ></i>
+                </ul>
+                <i class="fas fa-bars  tag " onclick="openmenu()" ></i>
+            </nav>
+            <div class="me"  >
+                <section id="hero" class="hero-fullscreen parallax" data-overlay-dark="7">
+                    <div class="container">
+                        <div class="row">
+        
+                            <div class="hero-content-slider mt20" data-autoplay="true" data-speed="4000">
+        
+                                <div>
+                                    <h1>My Name is<br><strong>NSANZIMANA Esdras </strong></h1>
+                                    <p>I am Software Developer with high Experience and skills.</p>
+                                    <p class="lead">Meny peaple coll me  <span style="color: #ff004f;" >_Expert_ </span> becouse of my proffecinlism. </p>
+                                    <p class="lead">I am leadly to create digital agency that loves crafting  beautiful  <span style="color: #ff004f;" >websites </span> or  <span style="color: #ff004f;">systems</span> </p>
+                                    <p> and much more with great functionality.</p>
+                                    <a href="#about" class="btn btn-lg btn-primary btn-scroll">We're Creative</a>
+                                </div>
+                        </div>
+                    </div>
+                    </div>
+
+                </section>
+                    
+            </div>
+      </div>
+      </div>
+    </div>
+    <!--               about          -->
+    <div id="about">
+       
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="{% static 'img/image2.jpg' %}" alt="">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title" >About Me</h1>
+                    <p>Dedicated software developer with hands-on experience in developing web applications.
+                        Proficient in JAVASCRIPT, PYTHON, PHP, SQL, HTML, CSS and other technologies.
+                        Seeking opportunities to apply my
+                        skills and contribute to innovative projects.
+                    </p>
+                       <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links"onclick="opentab('Experience')" >Experience</p>
+                        <p class="tab-links"onclick="opentab('Education')" >Education</p>
+                       </div>
+                       <div class="tab-contents active-tab" id="skills" >
+                        <ul  class="ul" >   
+                            <li class="li"><span>Programming Languages:</span><br>JavaScript, Python, php, sql, html, css –etc</li>
+                            <li class="li"><span>Technologies and Frameworks:</span><br>Tailwind CSS,Bootstrap, Laravel, Django<br>
+                                Tools and Platforms: Git, cloud, hosting Platforms, kali</li>
+                            <li  class="li"><span>Soft Skills:</span><br>Problem-solving, teamwork, communication<br> Languages:English, Ikinyarwanda</li>
+                            <li  class="li"><span>CERTIFICATE:</span><br>Certificate for ALX AiCE - AI Career Essentials<br>
+                                Laravel framework Certificate<br>
+                                high school completion Certificate</li>
+                        </ul>
+                       </div>
+                       <div class="tab-contents" id="Experience" >
+                        <ul class="ul">
+                            <li  class="li"><span>Junior Software Developer</span><br>Kigali, Rwanda | January 2023 – Present
+                                Assisted in developing e-commerce platforms using html, jscss and php
+                                Collaborated with cross-functional teams to design an dimplement new features.
+                                Automated testing processes, reducing bugs by 25%.</li>
+
+
+
+                            <li  class="li"><span>Intern | Tech Solutions Ltd</span><br>Kigali, Rwanda | June 2022 – December 2022
+                                Supported senior developers in maintaining web applications.
+                                Conducted code reviews and provided feedback to improve code quality.
+                                Participated in the development of internal tools for project management.</li>
+                        </ul>
+                       </div>
+                       <div class="tab-contents" id="Education" >
+                        <ul class="ul">
+                            <li  class="li"><span>date: 2021-2024</span><br>Bachelor of Software development<br>Word mission high school | Kigali | Rwanda</li>
+                            <li  class="li"><span>date: 2024-2024</span><br>eight(8) weeks of short course in ALX<br>ALX Ai career Essentials.</li>
+                            <li class="li">For Successfully completing an 8-weeks program in Ai
+                                Augmented professional Development skills in the Digital Age.
+                                CERTIFICATE OF ACHIEVEMENT
+                                <a href="https://intranet.alxswe.com/certificates/x5f7p6mTBS"> link:https://intranet.alxswe.com/certificates/x5f7p6mTBS</a>
+                               
+                                date of issue: 31st july 2024
+                                program completion date 30th july 2024</li>
+                
+                        </ul>
+                       </div>
+
+                </div>
+            </div>
+       
+    </div>   
+    
+    
+        <!-----------------------  services ----------------------    -->
+         <section id="services" class="services">
+            <div class="container">
+                <div class="col-md-12 text-center pb20">
+                    <h2 class="h2">What Can i Do<br><strong>My Capabilities</strong></h2>
+                    <p class="lead">A highly skilled professional service with a <span class="color">creative touch</span>.</p>
+                </div>
+                <div id="row">
+
+
+                    <div class="col-md-4 col-sm-6 feature-left">
+                        <img style="width: 25px; " src="{% static 'flat-color-icons-svg/multiple_cameras.svg' %}" alt="">
+                        <img style="width: 40px; " src="{% static 'flat-color-icons-svg/multiple_cameras.svg' %}" alt="">
+                        
+                        <div class="feature-left-content">
+                            <h4><strong>Graphic Design</strong><br>Crafting With Love</h4>
+                            <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt.</p>
+                        </div>
+                    </div>
+
+                    <div class="col-md-4 col-sm-6 feature-left">
+                        <img style="width: 25px; " src="{% static 'flat-color-icons-svg/collect.svg' %}" alt="">
+                        <img style="width: 40px; " src="{% static 'flat-color-icons-svg/collect.svg' %}" alt="">
+                        <div class="feature-left-content">
+                            <h4><strong>Modern Coding</strong><br>Crafting With Love</h4>
+                            <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt.</p>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-sm-6 feature-left">
+                        <img style="width: 25px; " src="{% static 'flat-color-icons-svg/mind_map.svg' %}" alt="">
+                        <img style="width: 40px; " src="{% static 'flat-color-icons-svg/mind_map.svg' %}" alt="">
+                        <div class="feature-left-content">
+                            <h4><strong>Web Optimization</strong><br>Lightning Fast</h4>
+                            <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt.</p>
+                        </div>
+                    </div>
+
+                    <div class="col-md-4 col-sm-6 feature-left">
+                        <img style="width: 25px; " src="{% static 'flat-color-icons-svg/biohazard.svg' %}" alt="">
+                        <img style="width: 40px; " src="{% static 'flat-color-icons-svg/biohazard.svg' %}" alt="">
+                        <div class="feature-left-content">
+                            <h4><strong>Brand Indentity</strong><br>Making a New You</h4>
+                            <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt.</p>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-sm-6 feature-left">
+                        <img style="width: 25px; " src="{% static 'flat-color-icons-svg/customer_support.svg' %}" alt="">
+                        <img style="width: 40px; " src="{% static 'flat-color-icons-svg/customer_support.svg' %}" alt="">
+                        <div class="feature-left-content">
+                            <h4><strong>24/7 Free Support</strong><br>Free Support</h4>
+                            <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt.</p>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-sm-6 feature-left">
+                        <img style="width: 25px; " src="{% static 'flat-color-icons-svg/biotech.svg' %}" alt="">
+                        <img style="width: 40px; " src="{% static 'flat-color-icons-svg/biotech.svg' %}" alt="">
+                        <div class="feature-left-content">
+                            <h4><strong>Having Fun</strong><br>Office Surfing</h4>
+                            <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt.</p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+        <!-- End Services -->
+<!-- -----------------------------------project--------------------- -->
+<section id="project" style="background: #1d1c1c; padding: 0 30px; margin-top: 3%; display: flex; justify-content: center; align-items: center; flex-direction: column;">
+    <div style="display: flex; justify-content: center; align-items: center; flex-direction: column; width: 60%; gap: 10px;">
+        <h1 style="color: white; font-weight: bolder; border-bottom: 1px solid red;">Projects we <span style="color: #ff004f;">have done</span></h1>
+    </div>
+    <!-- project list -->
+    <div style="width: 90%; margin-bottom: 2%; margin-top: 2%; display: flex; justify-content: center; align-items: center; flex-direction: column; border-bottom: 1px solid #ff004f;">
+        {% for project in projects %}
+        <div style="display: flex; flex-wrap: wrap; width: 100%; margin-bottom: 2%;">
+
+            <img style="width: 100px; height: 100px; border-radius: 40%;" src="{{ project.logo.url }}" alt="{{ project.website_name }}">
+
+            <div style="display: block; margin-left: 4%;">
+                <h3 style="font-weight: bold;">Project Name: <span style="color: #ff004f;">{{ project.website_name }}</span></h3>
+                <div style="margin-top: 2%;">
+                    <h4 style="font-size: 15px; font-weight: lighter; font-family: 'Courier New', Courier, monospace;">{{ project.description }}</h4>
+                </div>
+                <hr style="margin-top: 2%; margin-bottom: 2%; background-color: white; color: white; font-weight: bold;">
+                <div>
+                    <h3>Date:</h3>
+                    <address><p>{{ project.created_date|date:"F j, Y" }}</p></address>
+                </div>
+                <div>
+                    <h3>Visit Site on This Link:</h3>
+                    <address><p><a target="_blank" style="color: #00e1ff;" href="{{ project.link }}">{{ project.website_name }}</a></p></address>
+                </div>
+            </div>
+        </div>
+        {% endfor %}
+    </div>
+</section>
+
+
+    <!-- ------------------------contact--------------- -->
+    <div id="contct">
+        
+            <div class="row">
+                <div class="contact-left"> 
+                    <h1 class="sub-title" >Contact Me</h1>
+                    <P> <i class="fas fa-paper-plane"></i> nsanzimanaesdras2@gmail.com</P>
+                    <p> <i class="fas fa-phone-square-alt"></i> +250 789 865 312</p>
+                    <div class="social-icons">
+                        <a href="#"><i class="fab fa-facebook"></i> </a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"> <i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                    </div>
+                    <a target="_blank" href="{% static 'cv/nsanzimanaesdras.pdf' %}" class="btn btn2" download="{% static 'cv/nsanzimanaesdras.pdf' %}" >Download CV</a >
+                    
+                </div>
+                <div class="contact-right" style="padding: 30px;" >
+
+                </head>
+                <body>
+                
+                <form method="POST" action="">
+                    {% csrf_token %}
+                    <input type="text" name="Name" placeholder="Your Name" required>
+                    <input type="tel" name="tel" placeholder="Your Phone number" required>
+                    <input type="email" name="email" placeholder="Your Email" required>
+                    <textarea placeholder="Your Message" name="Message" rows="6" required></textarea>
+                    <button type="submit" class="btn btn2">Submit</button>
+                </form>
+                    
+                </div>
+            </div>
+        </div>    
+  
+  </div>
+  <div class="loader_main">
+    <div class="loader">_Expert_</div>
+ </div> 
+
+  <div class="footer_section layout_padding">
+    </div>
+ </div>
+ <!-- footer section end -->
+ <!-- copyright section start -->
+ <div class="copyright_section">
+    <div class="container">
+       <p class="copyright_text">&copy;2024 nsanzimanaesdras All Rights Reserved. Design by _Expert_</p>
+    </div>
+
+ </div>
+<!-- Pass success status via a hidden input -->
+<input type="hidden" id="success-status" value="{% if success %}true{% else %}false{% endif %}">
+
+<script>
+    document.addEventListener("DOMContentLoaded", function() {
+        var successStatus = document.getElementById("success-status").value;
+        if (successStatus === "true") {
+            alert("Thank you for your message! We will get back to you soon.");
+        }
+    });
+</script>
+
+    <script>
+        var tabcontents=document.getElementsByClassName("tab-contents");
+        var tablinks=document.getElementsByClassName("tab-links");
+        function opentab(tabname){
+            for(tablink of tablinks){
+                tablink.classList.remove("active-link");
+            }
+            for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab")
+        }
+        
+    </script>
+    <script>
+        var  sidemenu = document.getElementById("sidemenu");
+        function openmenu(){
+            sidemenu.style.right = "0";
+        }
+        function closemenu(){
+            sidemenu.style.right = "-200px";
+        }
+    </script>
+    <script>
+        var typed = new typed(".script",{
+            string:["Social Media App", "Social Media App", "web design"],
+            typeSpeed:100,
+            backSpeed:100,
+            backDelay:1000,
+            loop:true
+        })
+    </script>
+</body>
+</html>
